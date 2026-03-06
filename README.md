@@ -13,10 +13,6 @@ This project is designed to support a Reddit Data API approval request for an **
 - Lets the user attach private tags, notes, and a local status to saved items
 - Stores all organizational metadata locally on-device using DataStore
 
-## Why this is outside Devvit
-
-This app is an **off-platform personal utility** for private cross-device organization of a user's own saved Reddit content. It is not an in-community app experience living inside Reddit, and it is not a moderator/community interaction tool.
-
 ## OAuth / API model
 
 This app uses Reddit's installed-app OAuth flow:
@@ -62,15 +58,6 @@ These are intentionally limited to the features implemented.
 - `RedditApi.kt` — token exchange, refresh, profile fetch, saved-item fetch
 - `AppStorage.kt` — local persistence for config, tokens, folders, notes, tags
 - `MainScreen.kt` — Compose UI for config, login, saved list, organization dialogs
-
-## Setup
-
-1. Create and obtain approval for a Reddit installed application.
-2. In Reddit app settings, register the redirect URI used by this app.
-3. Open the project in Android Studio.
-4. Run the app on a device or emulator.
-5. Enter your client ID, redirect URI, and Reddit-compliant `User-Agent` in the configuration screen.
-6. Tap **Connect Reddit**.
 
 ## Important implementation notes
 
